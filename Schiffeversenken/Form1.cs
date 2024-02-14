@@ -31,7 +31,7 @@ namespace Schiffeversenken
             }
             //textBox1.Text = multiLineText;
 
-            //textBox1.BackColor = Color.LightGray;
+            //sstextBox1.BackColor = Color.LightGray;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
