@@ -29,50 +29,62 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pic_Spielfeld = new System.Windows.Forms.PictureBox();
+            this.lbl_Ueberschrift = new System.Windows.Forms.Label();
+            this.btn_SchiffePlatzieren = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Spielfeld)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // pic_Spielfeld
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.pic_Spielfeld.Image = ((System.Drawing.Image)(resources.GetObject("pic_Spielfeld.Image")));
+            this.pic_Spielfeld.Location = new System.Drawing.Point(13, 200);
+            this.pic_Spielfeld.Name = "pic_Spielfeld";
+            this.pic_Spielfeld.Size = new System.Drawing.Size(988, 662);
+            this.pic_Spielfeld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Spielfeld.TabIndex = 1;
+            this.pic_Spielfeld.TabStop = false;
             // 
-            // pictureBox2
+            // lbl_Ueberschrift
             // 
-            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(34, 59);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(936, 648);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.lbl_Ueberschrift.AutoSize = true;
+            this.lbl_Ueberschrift.Font = new System.Drawing.Font("Stencil", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Ueberschrift.Location = new System.Drawing.Point(84, 19);
+            this.lbl_Ueberschrift.Name = "lbl_Ueberschrift";
+            this.lbl_Ueberschrift.Size = new System.Drawing.Size(838, 95);
+            this.lbl_Ueberschrift.TabIndex = 2;
+            this.lbl_Ueberschrift.Text = "Schiffe versenken";
+            // 
+            // btn_SchiffePlatzieren
+            // 
+            this.btn_SchiffePlatzieren.Location = new System.Drawing.Point(97, 127);
+            this.btn_SchiffePlatzieren.Name = "btn_SchiffePlatzieren";
+            this.btn_SchiffePlatzieren.Size = new System.Drawing.Size(204, 29);
+            this.btn_SchiffePlatzieren.TabIndex = 3;
+            this.btn_SchiffePlatzieren.Text = "Schiffe platzieren";
+            this.btn_SchiffePlatzieren.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 778);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1013, 874);
+            this.Controls.Add(this.btn_SchiffePlatzieren);
+            this.Controls.Add(this.lbl_Ueberschrift);
+            this.Controls.Add(this.pic_Spielfeld);
             this.Name = "Form1";
             this.Text = "Schiffeversenken";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Spielfeld)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pic_Spielfeld;
+        private System.Windows.Forms.Label lbl_Ueberschrift;
+        private System.Windows.Forms.Button btn_SchiffePlatzieren;
     }
 }
 

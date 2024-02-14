@@ -29,9 +29,9 @@ namespace Schiffeversenken
             {
                 multiLineText += $"Zeile {i}\n";
             }
-            textBox1.Text = multiLineText;
+            //textBox1.Text = multiLineText;
 
-            textBox1.BackColor = Color.LightGray;
+            //textBox1.BackColor = Color.LightGray;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
